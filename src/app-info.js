@@ -1,5 +1,5 @@
 const appInfo = {
-    title: 'Horns And Hooves'
+    title: 'Саня ты в порядке?'
 };
 export default appInfo;
 

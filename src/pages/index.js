@@ -1,3 +1,11 @@
 export { default as HomePage } from './home/home';
 export { default as ProfilePage } from './profile/profile';
 export { default as TasksPage } from './tasks/tasks';
+export { default as ПредложенияPage } from './предложения/предложения';
+export { default as OffersPage } from './offers/offers';
+export { default as SendedPage } from './sended/sended';
+export { default as HereticPage } from './heretic/heretic';
+export { default as AnswersPage } from './answers/answers';
+export { default as LoyalistsPage } from './loyalists/loyalists';
+export { default as ProsOfHeresyPage } from './pros_of_heresy/pros_of_heresy';
+export { default as CreateRequestPage } from './create_request/create_request';

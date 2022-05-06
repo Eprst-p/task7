@@ -1,5 +1,5 @@
 import { withNavigationWatcher } from './contexts/navigation';
-import { HomePage, TasksPage, ProfilePage } from './pages';
+import { HomePage, TasksPage, ProfilePage, ПредложенияPage, OffersPage, SendedPage, HereticPage, AnswersPage, LoyalistsPage, ProsOfHeresyPage, CreateRequestPage } from './pages';
 
 const routes = [
   {
@@ -13,6 +13,38 @@ const routes = [
   {
     path: '/home',
     component: HomePage
+  }, 
+  {
+    path: '/предложения',
+    component: ПредложенияPage
+  }, 
+  {
+    path: '/offers',
+    component: OffersPage
+  }, 
+  {
+    path: '/sended',
+    component: SendedPage
+  }, 
+  {
+    path: '/heretic',
+    component: HereticPage
+  }, 
+  {
+    path: '/answers',
+    component: AnswersPage
+  }, 
+  {
+    path: '/loyalists',
+    component: LoyalistsPage
+  }, 
+  {
+    path: '/pros-of-heresy',
+    component: ProsOfHeresyPage
+  }, 
+  {
+    path: '/create-request',
+    component: CreateRequestPage
   }
 ];
 

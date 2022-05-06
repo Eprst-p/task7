@@ -163,7 +163,7 @@
 }
 .dx-theme-material-typography .dx-swatch-additional a,
 .dx-theme-material-typography.dx-swatch-additional a {
-  color: #ff5722;
+  color: #009688;
 }
 .dx-swatch-additional .dx-icon-add,
 .dx-swatch-additional .dx-icon-addcolumnleft,
@@ -1885,10 +1885,10 @@
   margin: 0;
 }
 .dx-swatch-additional .dx-theme-marker {
-  font-family: "dx.material.orange-dark";
+  font-family: "dx.material.teal-dark";
 }
 .dx-swatch-additional .dx-theme-accent-as-text-color {
-  color: #ff5722!important;
+  color: #009688!important;
 }
 .dx-swatch-additional .dx-theme-text-color {
   color: #fff!important;
@@ -1900,8 +1900,8 @@
   color: #515159!important;
 }
 .dx-swatch-additional .dx-theme-accent-as-background-color {
-  background-color: #ff5722!important;
-  fill: #ff5722!important;
+  background-color: #009688!important;
+  fill: #009688!important;
 }
 .dx-swatch-additional .dx-theme-text-color-as-background-color {
   background-color: #fff!important;
@@ -1916,7 +1916,7 @@
   fill: #515159!important;
 }
 .dx-swatch-additional .dx-theme-accent-as-border-color {
-  border-color: #ff5722!important;
+  border-color: #009688!important;
 }
 .dx-swatch-additional .dx-theme-text-color-as-border-color {
   border-color: #fff!important;
@@ -2679,7 +2679,7 @@
 }
 .dx-swatch-additional .dx-button.dx-button-default {
   border-radius: 4px;
-  background-color: #ff5722;
+  background-color: #009688;
   color: rgba(0,0,0,.87);
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
   box-shadow: 0 1px 3px rgba(0,0,0,.4);
@@ -2688,17 +2688,17 @@
   color: rgba(0,0,0,.87);
 }
 .dx-swatch-additional .dx-button.dx-button-default.dx-state-hover {
-  background-color: #ff784d;
+  background-color: #00c1af;
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
   box-shadow: 0 1px 3px rgba(0,0,0,.4);
 }
 .dx-swatch-additional .dx-button.dx-button-default.dx-state-focused {
-  background-color: #ff784d;
+  background-color: #00c1af;
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.48);
   box-shadow: 0 1px 3px rgba(0,0,0,.48);
 }
 .dx-swatch-additional .dx-button.dx-button-default.dx-state-active {
-  background-color: #ffc4b1;
+  background-color: #26ffeb;
   -webkit-box-shadow: 0 4px 6px rgba(0,0,0,.48);
   box-shadow: 0 4px 6px rgba(0,0,0,.48);
 }
@@ -2893,21 +2893,21 @@
 }
 .dx-swatch-additional .dx-button-mode-text.dx-button-default {
   background-color: transparent;
-  color: #ff5722;
+  color: #009688;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .dx-swatch-additional .dx-button-mode-text.dx-button-default .dx-icon {
-  color: #ff5722;
+  color: #009688;
 }
 .dx-swatch-additional .dx-button-mode-text.dx-button-default.dx-state-focused,
 .dx-swatch-additional .dx-button-mode-text.dx-button-default.dx-state-hover {
-  background-color: rgba(255,87,34,.08);
+  background-color: rgba(0,150,136,.08);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .dx-swatch-additional .dx-button-mode-text.dx-button-default.dx-state-active {
-  background-color: rgba(255,87,34,.36);
+  background-color: rgba(0,150,136,.36);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -2923,7 +2923,7 @@
   color: rgba(255,255,255,.35);
 }
 .dx-swatch-additional .dx-button-mode-text.dx-button-default .dx-inkripple-wave {
-  background-color: rgba(255,87,34,.2);
+  background-color: rgba(0,150,136,.2);
 }
 .dx-swatch-additional .dx-button-mode-text.dx-button-danger {
   background-color: transparent;
@@ -3030,22 +3030,22 @@
 }
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-default {
   background-color: transparent;
-  color: #ff5722;
+  color: #009688;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid #ff5722;
+  border: 1px solid #009688;
 }
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-default .dx-icon {
-  color: #ff5722;
+  color: #009688;
 }
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-default.dx-state-focused,
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-default.dx-state-hover {
-  background-color: rgba(255,87,34,.08);
+  background-color: rgba(0,150,136,.08);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-default.dx-state-active {
-  background-color: rgba(255,87,34,.36);
+  background-color: rgba(0,150,136,.36);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3061,7 +3061,7 @@
   color: rgba(255,255,255,.35);
 }
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-default .dx-inkripple-wave {
-  background-color: rgba(255,87,34,.2);
+  background-color: rgba(0,150,136,.2);
 }
 .dx-swatch-additional .dx-button-mode-outlined.dx-button-danger {
   background-color: transparent;
@@ -3208,7 +3208,7 @@
 .dx-swatch-additional .dx-checkbox.dx-checkbox-checked.dx-state-focused .dx-checkbox-icon::after,
 .dx-swatch-additional .dx-checkbox.dx-checkbox-indeterminate.dx-state-active .dx-checkbox-icon::after,
 .dx-swatch-additional .dx-checkbox.dx-checkbox-indeterminate.dx-state-focused .dx-checkbox-icon::after {
-  background-color: rgba(255,87,34,.1);
+  background-color: rgba(0,150,136,.1);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -3253,7 +3253,7 @@
 }
 .dx-swatch-additional .dx-checkbox-checked .dx-checkbox-icon {
   color: #363640;
-  background-color: #ff5722;
+  background-color: #009688;
   border: none;
   font: 16px/1em DXIcons;
   text-align: center;
@@ -3269,7 +3269,7 @@
   margin-left: -.5em;
 }
 .dx-swatch-additional .dx-checkbox-indeterminate .dx-checkbox-icon {
-  background-color: #ff5722;
+  background-color: #009688;
   color: #363640;
   border: none;
   font: 20px/1em DXIcons;
@@ -3727,7 +3727,7 @@
 .dx-swatch-additional .dx-badge {
   padding: 3px 9px;
   border-radius: 14px;
-  background-color: #ff5722;
+  background-color: #009688;
   color: rgba(0,0,0,.87);
   font-size: 12px;
   margin-left: 4px;
@@ -3831,7 +3831,7 @@
 }
 .dx-swatch-additional .dx-tab.dx-tab-selected,
 .dx-swatch-additional .dx-tab.dx-tab-selected .dx-icon {
-  color: #ff5722;
+  color: #009688;
 }
 .dx-swatch-additional .dx-tab.dx-tab-selected::before {
   content: "";
@@ -3840,7 +3840,7 @@
   height: 2px;
   left: 0;
   right: 0;
-  background-color: #ff5722;
+  background-color: #009688;
 }
 .dx-swatch-additional .dx-tab-content,
 .dx-swatch-additional .dx-tab-text {
@@ -4218,7 +4218,7 @@
 }
 .dx-swatch-additional .dx-texteditor.dx-state-focused .dx-texteditor-label,
 .dx-swatch-additional .dx-texteditor.dx-state-focused.dx-state-hover .dx-texteditor-label {
-  color: #ff5722;
+  color: #009688;
   font-size: 12px;
 }
 .dx-swatch-additional .dx-texteditor.dx-state-focused.dx-invalid .dx-texteditor-label,
@@ -4231,7 +4231,7 @@
 }
 .dx-swatch-additional .dx-texteditor.dx-state-active::before,
 .dx-swatch-additional .dx-texteditor.dx-state-focused::before {
-  border-bottom: 2px solid #ff5722;
+  border-bottom: 2px solid #009688;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: -webkit-transform .6s cubic-bezier(.4, 0, .02, 1);
@@ -4396,8 +4396,8 @@
   color: rgba(255,255,255,.5);
 }
 .dx-swatch-additional .dx-texteditor.dx-editor-outlined.dx-state-focused {
-  -webkit-box-shadow: inset 0 0 0 2px #ff5722;
-  box-shadow: inset 0 0 0 2px #ff5722;
+  -webkit-box-shadow: inset 0 0 0 2px #009688;
+  box-shadow: inset 0 0 0 2px #009688;
 }
 .dx-swatch-additional .dx-texteditor.dx-editor-outlined.dx-state-focused.dx-invalid {
   -webkit-box-shadow: inset 0 0 0 2px #f44336;
@@ -5130,8 +5130,8 @@
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label {
   padding: 0;
   height: 100%;
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset 2px 0 transparent,inset -2px 0 transparent;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset 2px 0 transparent,inset -2px 0 transparent;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset 2px 0 transparent,inset -2px 0 transparent;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset 2px 0 transparent,inset -2px 0 transparent;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused .dx-texteditor-label .dx-label span,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label span,
@@ -5191,8 +5191,8 @@
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-state-hover.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
@@ -5218,8 +5218,8 @@
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-state-hover.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-state-hover.dx-textarea .dx-texteditor-label .dx-label span,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-textarea .dx-texteditor-label .dx-label span,
@@ -5348,8 +5348,8 @@
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-state-hover.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-rtl .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-state-hover.dx-rtl .dx-texteditor-label .dx-label-after,
@@ -5399,8 +5399,8 @@
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-state-hover.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-readonly.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-invalid,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-lookup-empty.dx-state-disabled.dx-state-focused.dx-state-hover.dx-invalid,
@@ -6416,8 +6416,8 @@
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label {
   height: 100%;
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px transparent,inset 2px 0 transparent,inset -2px 0 transparent;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px transparent,inset 2px 0 transparent,inset -2px 0 transparent;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px transparent,inset 2px 0 transparent,inset -2px 0 transparent;
+  box-shadow: inset 0 -2px #009688,inset 0 2px transparent,inset 2px 0 transparent,inset -2px 0 transparent;
   padding: 0 4px;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused .dx-texteditor-label .dx-label span,
@@ -6452,8 +6452,8 @@
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
@@ -6467,8 +6467,8 @@
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused .dx-texteditor-label .dx-label-before,
@@ -6534,8 +6534,8 @@
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-before,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 #ff5722,inset 2px 0 transparent;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 #009688,inset 2px 0 transparent;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused.dx-rtl .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused.dx-state-hover.dx-rtl .dx-texteditor-label .dx-label-after,
@@ -6561,8 +6561,8 @@
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused .dx-texteditor-label .dx-label-after,
 .dx-swatch-additional .dx-rtl .dx-editor-outlined.dx-texteditor-with-label.dx-textarea.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after {
-  -webkit-box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
-  box-shadow: inset 0 -2px #ff5722,inset 0 2px #ff5722,inset -2px 0 transparent,inset 2px 0 #ff5722;
+  -webkit-box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
+  box-shadow: inset 0 -2px #009688,inset 0 2px #009688,inset -2px 0 transparent,inset 2px 0 #009688;
 }
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused.dx-invalid,
 .dx-swatch-additional .dx-editor-outlined.dx-texteditor-with-floating-label.dx-dropdowneditor-active.dx-state-focused.dx-state-hover.dx-invalid,
@@ -7195,7 +7195,7 @@
 .dx-swatch-additional .dx-loadindicator-segment-inner {
   position: relative;
   height: 100%;
-  border-color: #ff5722 #ff5722 transparent;
+  border-color: #009688 #009688 transparent;
   border-width: .12em;
   border-style: solid;
   -webkit-animation: none;
