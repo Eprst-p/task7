@@ -1,6 +1,7 @@
 import React from 'react';
 import './area_control.scss';
 
+
 export default () => (
   <React.Fragment>
     <h2 className={'content-block'}>Area_control</h2>

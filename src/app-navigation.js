@@ -21,39 +21,35 @@ export const navigation = [
   {
     text: 'Games',
     path: '/games',
-    icon: 'fields'
+    icon: 'fields',
+    items: [
+      {
+        text: 'Euro',
+        path: '/euro',
+      }, 
+      {
+        text: 'Area_control',
+        path: '/area-control',
+      }, 
+      {
+        text: 'Dungeon_crawlers',
+        path: '/dungeon-crawlers',
+      }, 
+      {
+        text: 'Cooperatives',
+        path: '/cooperatives',
+      }, 
+      {
+        text: 'Abstracts',
+        path: '/abstracts',
+      }, 
+      {
+        text: 'Duels',
+        path: '/duels',
+      }, 
+    ]
   }, 
-  {
-    text: 'Euro',
-    path: '/euro',
-    icon: 'folder'
-  }, 
-  {
-    text: 'Area_control',
-    path: '/area-control',
-    icon: 'folder'
-  }, 
-  {
-    text: 'Dungeon_crawlers',
-    path: '/dungeon-crawlers',
-    icon: 'folder'
-  }, 
-  {
-    text: 'Cooperatives',
-    path: '/cooperatives',
-    icon: 'folder'
-  }, 
-  {
-    text: 'Abstracts',
-    path: '/abstracts',
-    icon: 'folder'
-  }, 
-  {
-    text: 'Duels',
-    path: '/duels',
-    icon: 'folder'
-  }, 
-  {
+    {
     text: 'User',
     path: '/user',
     icon: 'user'

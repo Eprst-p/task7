@@ -178,3 +178,5 @@ const allGames: gameType[] = [
         rating: 7.87,
     },
 ]
+
+export {allGames}
