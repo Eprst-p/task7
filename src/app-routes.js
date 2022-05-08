@@ -1,5 +1,5 @@
 import { withNavigationWatcher } from './contexts/navigation';
-import { HomePage, TasksPage, ProfilePage, ПредложенияPage, OffersPage, SendedPage, HereticPage, AnswersPage, LoyalistsPage, ProsOfHeresyPage, CreateRequestPage } from './pages';
+import { HomePage, TasksPage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, AbstractsPage, DuelsPage, UserPage } from './pages';
 
 const routes = [
   {
@@ -7,44 +7,40 @@ const routes = [
     component: TasksPage
   },
   {
-    path: '/profile',
-    component: ProfilePage
-  },
-  {
     path: '/home',
     component: HomePage
   }, 
   {
-    path: '/предложения',
-    component: ПредложенияPage
+    path: '/games',
+    component: GamesPage
   }, 
   {
-    path: '/offers',
-    component: OffersPage
+    path: '/euro',
+    component: EuroPage
   }, 
   {
-    path: '/sended',
-    component: SendedPage
+    path: '/area-control',
+    component: AreaControlPage
   }, 
   {
-    path: '/heretic',
-    component: HereticPage
+    path: '/dungeon-crawlers',
+    component: DungeonCrawlersPage
   }, 
   {
-    path: '/answers',
-    component: AnswersPage
+    path: '/cooperatives',
+    component: CooperativesPage
   }, 
   {
-    path: '/loyalists',
-    component: LoyalistsPage
+    path: '/abstracts',
+    component: AbstractsPage
   }, 
   {
-    path: '/pros-of-heresy',
-    component: ProsOfHeresyPage
-  }, 
+    path: '/duels',
+    component: DuelsPage
+  },
   {
-    path: '/create-request',
-    component: CreateRequestPage
+    path: '/user',
+    component: UserPage
   }
 ];
 

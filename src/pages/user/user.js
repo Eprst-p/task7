@@ -1,9 +1,9 @@
 import React from 'react';
-import './create_request.scss';
+import './user.scss';
 
 export default () => (
   <React.Fragment>
-    <h2 className={'content-block'}>Create_request</h2>
+    <h2 className={'content-block'}>User</h2>
     <div className={'content-block'}>
       <div className={'dx-card responsive-paddings'}>
         Put your content here

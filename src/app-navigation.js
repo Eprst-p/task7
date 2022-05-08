@@ -17,45 +17,45 @@ export const navigation = [
         path: '/tasks'
       }
     ]
-  }, 
+  },  
   {
-    text: 'Предложения',
-    path: '/предложения',
-    icon: 'folder'
-  }, 
-  {
-    text: 'Offers',
-    path: '/offers',
+    text: 'Games',
+    path: '/games',
     icon: 'fields'
   }, 
   {
-    text: 'Sended',
-    path: '/sended',
-    icon: 'todo'
+    text: 'Euro',
+    path: '/euro',
+    icon: 'folder'
   }, 
   {
-    text: 'Heretic',
-    path: '/heretic',
+    text: 'Area_control',
+    path: '/area-control',
+    icon: 'folder'
+  }, 
+  {
+    text: 'Dungeon_crawlers',
+    path: '/dungeon-crawlers',
+    icon: 'folder'
+  }, 
+  {
+    text: 'Cooperatives',
+    path: '/cooperatives',
+    icon: 'folder'
+  }, 
+  {
+    text: 'Abstracts',
+    path: '/abstracts',
+    icon: 'folder'
+  }, 
+  {
+    text: 'Duels',
+    path: '/duels',
+    icon: 'folder'
+  }, 
+  {
+    text: 'User',
+    path: '/user',
     icon: 'user'
-  }, 
-  {
-    text: 'Answers',
-    path: '/answers',
-    icon: 'message'
-  }, 
-  {
-    text: 'Loyalists',
-    path: '/loyalists',
-    icon: 'food'
-  }, 
-  {
-    text: 'Pros_of_heresy',
-    path: '/pros-of-heresy',
-    icon: 'tips'
-  }, 
-  {
-    text: 'Create_request',
-    path: '/create-request',
-    icon: 'add'
   }
   ];

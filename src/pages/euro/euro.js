@@ -1,9 +1,9 @@
 import React from 'react';
-import './loyalists.scss';
+import './euro.scss';
 
 export default () => (
   <React.Fragment>
-    <h2 className={'content-block'}>Loyalists</h2>
+    <h2 className={'content-block'}>Euro</h2>
     <div className={'content-block'}>
       <div className={'dx-card responsive-paddings'}>
         Put your content here
