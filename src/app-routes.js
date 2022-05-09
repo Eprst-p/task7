@@ -1,5 +1,5 @@
 import { withNavigationWatcher } from './contexts/navigation';
-import { HomePage, TasksPage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, AbstractsPage, DuelsPage, UserPage } from './pages';
+import { HomePage, TasksPage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, DuelsPage, UserPage, ProfilePage } from './pages';
 
 const routes = [
   {
@@ -10,6 +10,10 @@ const routes = [
     path: '/home',
     component: HomePage
   }, 
+  {
+    path: '/profile',
+    component: ProfilePage
+  },
   {
     path: '/games',
     component: GamesPage
@@ -29,10 +33,6 @@ const routes = [
   {
     path: '/cooperatives',
     component: CooperativesPage
-  }, 
-  {
-    path: '/abstracts',
-    component: AbstractsPage
   }, 
   {
     path: '/duels',

@@ -40,10 +40,6 @@ export const navigation = [
         path: '/cooperatives',
       }, 
       {
-        text: 'Abstracts',
-        path: '/abstracts',
-      }, 
-      {
         text: 'Duels',
         path: '/duels',
       }, 
