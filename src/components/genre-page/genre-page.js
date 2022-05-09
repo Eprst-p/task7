@@ -1,7 +1,8 @@
 import React from 'react';
-import { useAppSelector } from '../../store/redux-hooks';
-import { getAllGames} from '../../store/selectors';
-import './games.scss';
+import './genre-page.scss';
+import { changeGenre } from '../../store/data-process';
+import { useAppSelector, useAppDispatch } from '../../store/redux-hooks';
+import { getGamesForGenre } from '../../store/selectors';
 import 'devextreme/dist/css/dx.light.css';
 
 import {
@@ -12,8 +13,10 @@ import {
 } from 'devextreme-react/data-grid';
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
-  const allGames = useAppSelector(getAllGames);
+export default function GenrePage({gameGenre}) {
+  const dispatch = useAppDispatch();
+  dispatch(changeGenre(gameGenre));
+  const gamesForGenre = useAppSelector(getGamesForGenre);
 
   const writePlayersAmount = (cellInfo) => {
     const min = cellInfo.value.min;
@@ -24,15 +27,14 @@ export default () => {
     return `${min}-${max} чел`;
   }
 
-
   return (
     <>
-      <h2 className={'content-block'}>Все игры</h2>
+      <h2 className={'content-block'}>{gameGenre}</h2>
       <div className={'content-block'}>
         <div className={'dx-card responsive-paddings'}>
             <DataGrid 
               id="dataGrid"
-              dataSource={allGames}
+              dataSource={gamesForGenre}
               keyExpr="name"
               allowColumnReordering={true}
               columnAutoWidth={true}
@@ -50,10 +52,6 @@ export default () => {
                 width={200}
                 sortOrder="desc"
                 alignment={'center'}
-              />
-              <Column 
-                dataField="genre"
-                caption='Жанр игры'
               />
               <Column 
                 dataField="duration"

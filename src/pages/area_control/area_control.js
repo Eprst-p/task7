@@ -1,14 +1,12 @@
 import React from 'react';
-import './area_control.scss';
+import { GameGenre } from '../../settings/game-genre';
+import 'devextreme/dist/css/dx.light.css';
+import GenrePage from '../../components/genre-page/genre-page';
 
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () => {
 
-export default () => (
-  <React.Fragment>
-    <h2 className={'content-block'}>Area_control</h2>
-    <div className={'content-block'}>
-      <div className={'dx-card responsive-paddings'}>
-        Put your content here
-      </div>
-    </div>
-  </React.Fragment>
-);
+  return (
+      <GenrePage gameGenre={GameGenre.AreaConrol} />
+  )
+};

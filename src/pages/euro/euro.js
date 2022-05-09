@@ -1,13 +1,12 @@
 import React from 'react';
-import './euro.scss';
+import { GameGenre } from '../../settings/game-genre';
+import 'devextreme/dist/css/dx.light.css';
+import GenrePage from '../../components/genre-page/genre-page';
 
-export default () => (
-  <React.Fragment>
-    <h2 className={'content-block'}>Euro</h2>
-    <div className={'content-block'}>
-      <div className={'dx-card responsive-paddings'}>
-        Put your content here
-      </div>
-    </div>
-  </React.Fragment>
-);
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () => {
+
+  return (
+      <GenrePage gameGenre={GameGenre.Euro} />
+  )
+};

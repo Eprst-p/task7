@@ -1,2 +1,2 @@
 
-export const convertDuration = (bggDuration:number) => bggDuration * 1.4 / 60;
+export const convertDuration = (bggDuration:number) => +(bggDuration * 1.4 / 60).toFixed(1);
