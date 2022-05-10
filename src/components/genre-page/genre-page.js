@@ -2,8 +2,10 @@ import React from 'react';
 import './genre-page.scss';
 import { changeGenre } from '../../store/data-process';
 import { useAppSelector, useAppDispatch } from '../../store/redux-hooks';
-import { getGamesForGenre } from '../../store/selectors';
+import { getChosenGenre, getGamesForGenre } from '../../store/selectors';
 import 'devextreme/dist/css/dx.light.css';
+import {allGames} from '../../fixtures/sources'
+
 
 import {
   DataGrid,
@@ -16,7 +18,8 @@ import {
 export default function GenrePage({gameGenre}) {
   const dispatch = useAppDispatch();
   dispatch(changeGenre(gameGenre));
-  const gamesForGenre = useAppSelector(getGamesForGenre);
+  const chosenGenre = useAppSelector(getChosenGenre)
+  const gamesForGenre = allGames.filter((game) => game.genre === chosenGenre);
 
   const writePlayersAmount = (cellInfo) => {
     const min = cellInfo.value.min;
@@ -35,7 +38,7 @@ export default function GenrePage({gameGenre}) {
             <DataGrid 
               id="dataGrid"
               dataSource={gamesForGenre}
-              keyExpr="name"
+              keyExpr="id"
               allowColumnReordering={true}
               columnAutoWidth={true}
               allowColumnResizing={true}

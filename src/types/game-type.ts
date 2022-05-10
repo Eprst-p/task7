@@ -1,4 +1,5 @@
 export type gameType = {
+    id: string,
     genre: string,
     name: string,
     rating: number,
@@ -8,4 +9,5 @@ export type gameType = {
         max: number,
     },
     description: string,
+    picture: string,
 }

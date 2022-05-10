@@ -49,5 +49,10 @@ export const navigation = [
     text: 'User',
     path: '/user',
     icon: 'user'
+  }, 
+  {
+    text: 'Game Page',
+    path: '/game-page',
+    icon: 'paste'
   }
   ];

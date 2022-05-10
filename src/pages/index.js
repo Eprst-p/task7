@@ -8,3 +8,4 @@ export { default as DungeonCrawlersPage } from './dungeon_crawlers/dungeon_crawl
 export { default as CooperativesPage } from './cooperatives/cooperatives';
 export { default as DuelsPage } from './duels/duels';
 export { default as UserPage } from './user/user';
+export { default as GamePagePage } from './game-page/game-page';

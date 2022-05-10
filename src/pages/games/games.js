@@ -3,17 +3,20 @@ import { useAppSelector } from '../../store/redux-hooks';
 import { getAllGames} from '../../store/selectors';
 import './games.scss';
 import 'devextreme/dist/css/dx.light.css';
+import {allGames} from '../../fixtures/sources'
 
 import {
   DataGrid,
   Column,
   SearchPanel,
-  FilterRow
+  FilterRow,
+  Button,
+  Editing
 } from 'devextreme-react/data-grid';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const allGames = useAppSelector(getAllGames);
+  //const allGames = useAppSelector(getAllGames);
 
   const writePlayersAmount = (cellInfo) => {
     const min = cellInfo.value.min;
@@ -33,21 +36,44 @@ export default () => {
             <DataGrid 
               id="dataGrid"
               dataSource={allGames}
-              keyExpr="name"
+              keyExpr="id"
               allowColumnReordering={true}
               columnAutoWidth={true}
               allowColumnResizing={true}
               focusedRowEnabled={true}
               defaultFocusedRowIndex={0}
               >
+              <Editing 
+                allowDeleting={true}
+                allowUpdating={true}
+                mode="row"
+              />
+              <Column 
+                width={100}
+                type={'buttons'}
+                name={'edit-buttons'}
+              >
+                <Button name={"edit"} />
+                <Button name={"delete"} />
+              </Column>
               <Column 
                 dataField={"name"}
                 caption='Название игры'
               />
               <Column 
+                width={70}
+                type={'buttons'}
+                name={'game-page-btn'}
+              >
+                <Button 
+                  onClick={(e)=>console.log(e.row)}
+                  icon={'movetofolder'}
+                />
+              </Column>
+              <Column 
                 dataField="rating"
                 caption='Рейтинг на BGG'
-                width={200}
+                width={100}
                 sortOrder="desc"
                 alignment={'center'}
               />

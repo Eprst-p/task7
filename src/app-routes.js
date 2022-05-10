@@ -1,5 +1,5 @@
 import { withNavigationWatcher } from './contexts/navigation';
-import { HomePage, TasksPage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, DuelsPage, UserPage, ProfilePage } from './pages';
+import { HomePage, TasksPage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, DuelsPage, UserPage, ProfilePage, GamePagePage } from './pages';
 
 const routes = [
   {
@@ -41,6 +41,10 @@ const routes = [
   {
     path: '/user',
     component: UserPage
+  }, 
+  {
+    path: '/game-page',
+    component: GamePagePage
   }
 ];
 
