@@ -1,9 +1,10 @@
 import React from 'react';
-import { useAppSelector } from '../../store/redux-hooks';
-import { getAllGames} from '../../store/selectors';
+import { useAppDispatch } from '../../store/redux-hooks';
 import './games.scss';
 import 'devextreme/dist/css/dx.light.css';
 import {allGames} from '../../fixtures/sources'
+import { useHistory } from 'react-router';
+import { changeID } from '../../store/data-process';
 
 import {
   DataGrid,
@@ -14,9 +15,11 @@ import {
   Editing
 } from 'devextreme-react/data-grid';
 
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  //const allGames = useAppSelector(getAllGames);
+  const dispatch = useAppDispatch();
+  const history = useHistory();
 
   const writePlayersAmount = (cellInfo) => {
     const min = cellInfo.value.min;
@@ -27,6 +30,10 @@ export default () => {
     return `${min}-${max} чел`;
   }
 
+  const handlerEnterBtnClick = (e) => {
+    dispatch(changeID(e.row.data.id));
+    history.push('/game-page');
+  }
 
   return (
     <>
@@ -66,8 +73,10 @@ export default () => {
                 name={'game-page-btn'}
               >
                 <Button 
-                  onClick={(e)=>console.log(e.row)}
-                  icon={'movetofolder'}
+                  name={"enter-page"}
+                  onClick={handlerEnterBtnClick}
+                  icon={'movetofolder'}                
+                  
                 />
               </Column>
               <Column 

@@ -1,7 +1,9 @@
 import React, { useCallback } from 'react';
 import './game-page.scss';
 import 'devextreme/dist/css/dx.light.css';
-import {allGames} from '../../fixtures/sources'
+import { getGameByID } from '../../store/selectors';
+import { useAppSelector } from '../../store/redux-hooks';
+
 
 import {
   Form, SimpleItem, Label, ButtonItem,
@@ -10,7 +12,9 @@ import {TextArea} from 'devextreme-react/text-area';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const gameData = allGames[0];
+  //const gameData = allGames[0];
+  const gameData = useAppSelector(getGameByID);
+
 
   const renderPicture = (data) => <img src={data.editorOptions.value} width={850} height={450} alt={'board-game'} />
   const saveBtnOptions = {

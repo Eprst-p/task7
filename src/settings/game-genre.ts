@@ -3,6 +3,5 @@ export enum GameGenre {
   AreaConrol = 'Контроль территорий',
   DungeonCrawlers = 'РПГ (данжеон-кравлерс)',
   Cooperatives = 'Кооперативы (в т.ч. с предателем)',
-  Abstarcts = 'Абстракты',
   Duels = 'Дуэльные игры',
 }

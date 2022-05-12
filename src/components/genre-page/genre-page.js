@@ -1,21 +1,24 @@
 import React from 'react';
 import './genre-page.scss';
-import { changeGenre } from '../../store/data-process';
+import { changeGenre, changeID } from '../../store/data-process';
 import { useAppSelector, useAppDispatch } from '../../store/redux-hooks';
-import { getChosenGenre, getGamesForGenre } from '../../store/selectors';
+import { getChosenGenre} from '../../store/selectors';
 import 'devextreme/dist/css/dx.light.css';
 import {allGames} from '../../fixtures/sources'
-
+import { useHistory } from 'react-router-dom';
 
 import {
   DataGrid,
   Column,
   SearchPanel,
-  FilterRow
+  FilterRow,
+  Editing,
+  Button,
 } from 'devextreme-react/data-grid';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function GenrePage({gameGenre}) {
+  const history = useHistory();
   const dispatch = useAppDispatch();
   dispatch(changeGenre(gameGenre));
   const chosenGenre = useAppSelector(getChosenGenre)
@@ -28,6 +31,11 @@ export default function GenrePage({gameGenre}) {
       return `${min} чел`;
     }
     return `${min}-${max} чел`;
+  }
+
+  const handlerEnterBtnClick = (e) => {
+    dispatch(changeID(e.row.data.id));
+    history.push('/game-page');
   }
 
   return (
@@ -45,10 +53,35 @@ export default function GenrePage({gameGenre}) {
               focusedRowEnabled={true}
               defaultFocusedRowIndex={0}
               >
+              <Editing 
+                allowDeleting={true}
+                allowUpdating={true}
+                mode="row"
+              />
+              <Column 
+                width={100}
+                type={'buttons'}
+                name={'edit-buttons'}
+              >
+                <Button name={"edit"} />
+                <Button name={"delete"} />
+              </Column>
               <Column 
                 dataField={"name"}
                 caption='Название игры'
               />
+              <Column 
+                width={70}
+                type={'buttons'}
+                name={'game-page-btn'}
+              >
+                <Button 
+                  name={"enter-page"}
+                  onClick={handlerEnterBtnClick}
+                  icon={'movetofolder'}                
+                  
+                />
+              </Column>
               <Column 
                 dataField="rating"
                 caption='Рейтинг на BGG'

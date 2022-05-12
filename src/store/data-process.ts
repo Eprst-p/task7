@@ -1,20 +1,21 @@
 import {createSlice} from '@reduxjs/toolkit';
 import { GameGenre } from '../settings/game-genre';
 import {DataProcess} from '../types/state';
+import { allGames } from '../fixtures/sources';
 
 
 const initialState: DataProcess = {
-  allGames: [],
   chosenGenre: GameGenre.Euro,
+  chosenID: allGames[0].id
 };
 
 export const dataProcess = createSlice({
   name: 'dataProcess',
   initialState,
   reducers: {
-    loadGames: (state, {payload}) => {state.allGames = payload},
     changeGenre: (state, {payload}) => {state.chosenGenre = payload},
+    changeID: (state, {payload}) => {state.chosenID = payload},
   },
 });
 
-export const {loadGames, changeGenre} = dataProcess.actions;
+export const {changeGenre, changeID} = dataProcess.actions;

@@ -7,13 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import { allGames } from './fixtures/sources';
 import { Provider } from 'react-redux';
 import {store} from './store';
-import { loadGames } from './store/data-process';
 
 
 const somethingFromServer = JSON.stringify(allGames);//шо-то пришло с сервера в JSON
 const dataFromJSON = JSON.parse(somethingFromServer);
 
-store.dispatch(loadGames(dataFromJSON));
 
 
 ReactDOM.render(

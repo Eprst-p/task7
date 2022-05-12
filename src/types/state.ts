@@ -4,10 +4,9 @@ import { gameType } from './game-type';
 
 
 export type DataProcess = {
-  allGames: gameType[];
   chosenGenre: GameGenre;
+  chosenID: string;
 };
-
 
 
 export type State = ReturnType<typeof store.getState>;

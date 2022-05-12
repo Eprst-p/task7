@@ -1,8 +1,9 @@
 import {State} from '../types/state'
 import {createSelector} from 'reselect';
+import { allGames } from '../fixtures/sources';
 
 
-export const getAllGames = (state:State) => state.dataProcess.allGames;
 export const getChosenGenre = (state:State) => state.dataProcess.chosenGenre;
+export const getChosenID = (state:State) => state.dataProcess.chosenID;
 
-export const getGamesForGenre = createSelector(getAllGames, getChosenGenre, (allGames, choosenGenre) => allGames.filter((game) => game.genre === choosenGenre));
+export const getGameByID = createSelector(getChosenID, (id) => allGames.find((game) => game.id === id));
