@@ -4,9 +4,8 @@ import { changeGenre, changeID } from '../../store/data-process';
 import { useAppSelector, useAppDispatch } from '../../store/redux-hooks';
 import { getChosenGenre} from '../../store/selectors';
 import 'devextreme/dist/css/dx.light.css';
-import {allGames} from '../../fixtures/sources'
+import { allGames } from '../../default-data/all-games';
 import { useHistory } from 'react-router-dom';
-
 import {
   DataGrid,
   Column,

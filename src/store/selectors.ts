@@ -1,6 +1,6 @@
 import {State} from '../types/state'
 import {createSelector} from 'reselect';
-import { allGames } from '../fixtures/sources';
+import { allGames } from '../default-data/all-games';
 
 
 export const getChosenGenre = (state:State) => state.dataProcess.chosenGenre;

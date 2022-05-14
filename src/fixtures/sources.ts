@@ -463,4 +463,6 @@ const allGames: gameType[] = [
     },
 ]
 
-export {allGames}
+const gamesInJson = JSON.stringify(allGames);
+
+export {gamesInJson}

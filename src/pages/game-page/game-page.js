@@ -8,6 +8,8 @@ import {
   Form, SimpleItem, Label, ButtonItem,
 } from 'devextreme-react/form';
 import { Popup, ToolbarItem } from 'devextreme-react/popup';
+import {TextArea} from 'devextreme-react/text-area'
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {

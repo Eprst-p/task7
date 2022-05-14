@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppDispatch } from '../../store/redux-hooks';
 import './games.scss';
 import 'devextreme/dist/css/dx.light.css';
-import {allGames} from '../../fixtures/sources'
+import { allGames } from '../../default-data/all-games';
 import { useHistory } from 'react-router';
 import { changeID } from '../../store/data-process';
 

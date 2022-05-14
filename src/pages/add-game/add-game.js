@@ -1,13 +1,15 @@
 import React, { useCallback, useState } from 'react';
 import './add-game.scss';
 import 'devextreme/dist/css/dx.light.css';
-import { allGames } from '../../fixtures/sources';
+import { allGames } from '../../default-data/all-games';
 import { genreSelectOpt } from '../../settings/genre-select-opt';
 import uniqid from 'uniqid';
  import {
   Form, SimpleItem, Label, ButtonItem,
 } from 'devextreme-react/form';
+import {TextArea} from 'devextreme-react/text-area'
 import { Popup, ToolbarItem } from 'devextreme-react/popup';
+
 
 let gameData;
 const setDefaultGameData = () => {

@@ -4,6 +4,8 @@ import ContextMenu, { Position } from 'devextreme-react/context-menu';
 import List from 'devextreme-react/list';
 import { useAuth } from '../../contexts/auth';
 import './user-panel.scss';
+import { userData } from '../../fixtures/user-data';
+import { defaultUser } from '../../default-data/default-user';
 
 export default function UserPanel({ menuMode }) {
   const { user, signOut } = useAuth();
@@ -28,15 +30,23 @@ export default function UserPanel({ menuMode }) {
   return (
     <div className={'user-panel'}>
       <div className={'user-info'}>
-        <div className={'image-container'}>
-          <div
+        <div 
+          className={'image-container'}>
+          <div 
+            className={'user-image'}
             style={{
-              background: `url(${user.avatarUrl}) no-repeat #fff`,
-              backgroundSize: 'cover'
-            }}
-            className={'user-image'} />
+              fontSize: '16px',
+              fontWeight: 600,
+              textAlign: 'center',
+              color: 'green',
+              paddingTop: '12px',
+              paddingLeft: '2px'
+              }}
+          >
+          {`${user.firstName[0]}${user.lastName[0]}`}
+          </div>
         </div>
-        <div className={'user-name'}>{user.email}</div>
+        <div className={'user-name'}>{user.login}</div>
       </div>
 
       {menuMode === 'context' && (

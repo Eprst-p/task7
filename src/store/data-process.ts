@@ -1,7 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
 import { GameGenre } from '../settings/game-genre';
 import {DataProcess} from '../types/state';
-import { allGames } from '../fixtures/sources';
+import { allGames } from '../default-data/all-games';
 
 
 const initialState: DataProcess = {

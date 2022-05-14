@@ -1,28 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './user.scss';
 import {
   Form, SimpleItem, Label, ButtonItem,
 } from 'devextreme-react/form';
 import { userData } from '../../fixtures/user-data';
+import {TextArea} from 'devextreme-react/text-area'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const [notes, setNotes] = useState(
-    'Интернет войен'
-  );
-  const employee = {
-    ID: 7,
-    FirstName: 'Sandra',
-    LastName: 'Johnson',
-    Prefix: 'Mrs.',
-    Position: 'Controller',
-    Picture: '/images/internet-warrior.png',
-    BirthDate: new Date('1974/11/5'),
-    HireDate: new Date('2005/05/11'),
-    Notes: notes,
-    Address: '4600 N Virginia Rd.'
-  };
 
   return (
     <React.Fragment>
@@ -35,25 +21,25 @@ export default () => {
             src={userData.picture}
           />
         </div>
-        <span>{notes}</span>
+        <span>{userData.notes}</span>
       </div>
 
       <div className={'content-block dx-card responsive-paddings'}>
         <Form
           id={'form'}
-          //defaultFormData={userData}
           formData={userData}
-          //onFieldDataChanged={e => e.userData === 'Notes' && setNotes(e.value)}
           labelLocation={'top'}
           colCountByScreen={colCountByScreen}
         >
           <SimpleItem 
             dataField={'firstName'}
+            colSpan={4}
           >
             <Label text={'Имя'}  />
           </SimpleItem>
           <SimpleItem 
             dataField={'lastName'}
+            colSpan={4}
           >
             <Label text={'Фамилия'}  />
           </SimpleItem>
