@@ -4,7 +4,6 @@ import 'devextreme/dist/css/dx.light.css';
 import { getGameByID } from '../../store/selectors';
 import { useAppSelector } from '../../store/redux-hooks';
 import { genreSelectOpt } from '../../settings/genre-select-opt';
-
 import {
   Form, SimpleItem, Label, ButtonItem,
 } from 'devextreme-react/form';
@@ -47,24 +46,23 @@ export default () => {
       <div className={'content-block'}>
         <div className={'dx-card responsive-paddings'}>
         <form action="#" onSubmit={handleSubmit}>
-        <Popup
-          visible={popupVisible}
-          onHiding={() => setPopupVisible(false)}
-          dragEnabled={false}
-          closeOnOutsideClick={true}
-          showCloseButton={false}
-          title="Сохранено"
-          width={200}
-          height={150}
-        >
-          <ToolbarItem
-            widget="dxButton"
-            toolbar="bottom"
-            location="center"
-            options={popupBtnOptions}
-          />
-        </Popup>
-
+          <Popup
+            visible={popupVisible}
+            onHiding={() => setPopupVisible(false)}
+            dragEnabled={false}
+            closeOnOutsideClick={true}
+            showCloseButton={false}
+            title="Сохранено"
+            width={200}
+            height={150}
+          >
+            <ToolbarItem
+              widget="dxButton"
+              toolbar="bottom"
+              location="center"
+              options={popupBtnOptions}
+            />
+          </Popup>
           <Form 
             id="form"
             formData={gameData}

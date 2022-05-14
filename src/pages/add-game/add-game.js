@@ -4,8 +4,7 @@ import 'devextreme/dist/css/dx.light.css';
 import { allGames } from '../../fixtures/sources';
 import { genreSelectOpt } from '../../settings/genre-select-opt';
 import uniqid from 'uniqid';
- 
-import {
+ import {
   Form, SimpleItem, Label, ButtonItem,
 } from 'devextreme-react/form';
 import { Popup, ToolbarItem } from 'devextreme-react/popup';

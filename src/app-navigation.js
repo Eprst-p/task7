@@ -45,11 +45,6 @@ export const navigation = [
       }, 
     ]
   }, 
-    {
-    text: 'User',
-    path: '/user',
-    icon: 'user'
-  }, 
   {
     text: 'Game Page',
     path: '/game-page',
@@ -59,5 +54,10 @@ export const navigation = [
     text: 'Add Game',
     path: '/add-game',
     icon: 'add'
-  }
+  },
+  {
+    text: 'User',
+    path: '/user',
+    icon: 'user'
+  }, 
   ];
