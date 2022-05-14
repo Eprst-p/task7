@@ -11,7 +11,6 @@ import Form, {
 import LoadIndicator from 'devextreme-react/load-indicator';
 import notify from 'devextreme/ui/notify';
 import { useAuth } from '../../contexts/auth';
-
 import './login-form.scss';
 
 export default function LoginForm() {
@@ -35,6 +34,7 @@ export default function LoginForm() {
   const onCreateAccountClick = useCallback(() => {
     history.push('/create-account');
   }, [history]);
+
 
   return (
     <form className={'login-form'} onSubmit={onSubmit}>

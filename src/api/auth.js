@@ -1,13 +1,18 @@
 import defaultUser from '../utils/default-user';
+import { allUsers } from '../default-data/default-user';
 
 export async function signIn(email, password) {
+  const user = allUsers.find((obj)=> obj.login === email)
+
   try {
     // Send request
-    console.log(email, password);
+    if (!(user.password === password)) {
+      throw new Error('Неправильный логин/пароль');
+    }
 
     return {
       isOk: true,
-      data: defaultUser
+      data: user
     };
   }
   catch {
@@ -37,7 +42,17 @@ export async function getUser() {
 export async function createAccount(email, password) {
   try {
     // Send request
-    console.log(email, password);
+    const newUser = {
+      id: allUsers.length + 1,
+      login: email,
+      password: password,
+      firstName: '',
+      lastName: '',
+      picture: '/images/internet-warrior.png',
+      notes: '',
+    }
+
+    allUsers.push(newUser);
 
     return {
       isOk: true

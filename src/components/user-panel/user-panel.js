@@ -4,8 +4,6 @@ import ContextMenu, { Position } from 'devextreme-react/context-menu';
 import List from 'devextreme-react/list';
 import { useAuth } from '../../contexts/auth';
 import './user-panel.scss';
-import { userData } from '../../fixtures/user-data';
-import { defaultUser } from '../../default-data/default-user';
 
 export default function UserPanel({ menuMode }) {
   const { user, signOut } = useAuth();
@@ -43,7 +41,13 @@ export default function UserPanel({ menuMode }) {
               paddingLeft: '2px'
               }}
           >
-          {`${user.firstName[0]}${user.lastName[0]}`}
+          { 
+            user.firstName[0] !== undefined && user.lastName[0] !== undefined 
+            ?
+            `${user.firstName[0]}${user.lastName[0]}`
+            :
+            ' '
+          }
           </div>
         </div>
         <div className={'user-name'}>{user.login}</div>

@@ -1,14 +1,13 @@
 import React from 'react';
 import './user.scss';
-import {
-  Form, SimpleItem, Label, ButtonItem,
-} from 'devextreme-react/form';
-import { userData } from '../../fixtures/user-data';
+import {Form, SimpleItem, Label} from 'devextreme-react/form';
 import {TextArea} from 'devextreme-react/text-area'
+import { useAuth } from '../../contexts/auth';
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
+  const { user } = useAuth();
 
   return (
     <React.Fragment>
@@ -18,16 +17,16 @@ export default () => {
         <div className={'form-avatar'}>
           <img
             alt={''}
-            src={userData.picture}
+            src={user.picture}
           />
         </div>
-        <span>{userData.notes}</span>
+        <span>{user.notes}</span>
       </div>
 
       <div className={'content-block dx-card responsive-paddings'}>
         <Form
           id={'form'}
-          formData={userData}
+          formData={user}
           labelLocation={'top'}
           colCountByScreen={colCountByScreen}
         >

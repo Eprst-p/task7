@@ -14,7 +14,7 @@ const allUsers: userDataType[] = [
     id: 2,
     login: 'sanya@example.com',
     password: 'sanya',
-    firstName: 'Саша',
+    firstName: 'Саша Саня',
     lastName: 'Александр',
     picture: '/images/internet-warrior.png',
     notes: 'Невидимый боец',
