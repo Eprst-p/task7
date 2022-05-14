@@ -9,3 +9,4 @@ export { default as CooperativesPage } from './cooperatives/cooperatives';
 export { default as DuelsPage } from './duels/duels';
 export { default as UserPage } from './user/user';
 export { default as GamePagePage } from './game-page/game-page';
+export { default as AddGamePage } from './add-game/add-game';

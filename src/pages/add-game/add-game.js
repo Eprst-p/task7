@@ -1,23 +1,41 @@
 import React, { useCallback, useState } from 'react';
-import './game-page.scss';
+import './add-game.scss';
 import 'devextreme/dist/css/dx.light.css';
-import { getGameByID } from '../../store/selectors';
-import { useAppSelector } from '../../store/redux-hooks';
+import { allGames } from '../../fixtures/sources';
 import { genreSelectOpt } from '../../settings/genre-select-opt';
-
+import uniqid from 'uniqid';
+ 
 import {
   Form, SimpleItem, Label, ButtonItem,
 } from 'devextreme-react/form';
 import { Popup, ToolbarItem } from 'devextreme-react/popup';
 
+let gameData;
+const setDefaultGameData = () => {
+  gameData = {
+    id: uniqid(),
+    genre: '',
+    name: '',
+    rating: 0,
+    duration: 0,
+    players: {
+        min: 0,
+        max: 0,
+    },
+    description: '',
+    picture: '/images/game-players.png',
+  }
+}
+setDefaultGameData();
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const [popupVisible, setPopupVisible] = useState(false);
-  const gameData = useAppSelector(getGameByID);
+  console.log('render');
 
   const renderPicture = (data) => <img src={data.editorOptions.value} width={850} height={450} alt={'board-game'} />
   const saveBtnOptions = {
-    text: "Save",
+    text: "Add new Game to List",
     type: "success",
     useSubmitBehavior: true,
   }
@@ -32,28 +50,28 @@ export default () => {
     gameData.players.max = formData.get('players.max');
     gameData.description = formData.get('description');
 
+    allGames.push(gameData);
     setPopupVisible(true);
-}, [gameData]);
+  }, []);
 
   const popupBtnOptions = {
     text: 'OK',
     onClick: () => setPopupVisible(false),
   }
 
-
   return (
     <React.Fragment>
-      <h2 className={'content-block'}>Game Page</h2>
+      <h2 className={'content-block'}>Добавить игру в список</h2>
       <div className={'content-block'}>
         <div className={'dx-card responsive-paddings'}>
-        <form action="#" onSubmit={handleSubmit}>
         <Popup
           visible={popupVisible}
           onHiding={() => setPopupVisible(false)}
+          onHidden={setDefaultGameData()}
           dragEnabled={false}
           closeOnOutsideClick={true}
           showCloseButton={false}
-          title="Сохранено"
+          title="Игра добавлена"
           width={200}
           height={150}
         >
@@ -64,7 +82,7 @@ export default () => {
             options={popupBtnOptions}
           />
         </Popup>
-
+        <form action="#" onSubmit={handleSubmit}>
           <Form 
             id="form"
             formData={gameData}
@@ -80,6 +98,7 @@ export default () => {
             <SimpleItem 
               dataField={'name'}
               colSpan={2}
+              isRequired={true}
             >
               <Label text={'Название игры'} />
             </SimpleItem>
@@ -95,22 +114,25 @@ export default () => {
             
             <SimpleItem 
               dataField={'rating'}
-              disabled={true}
+              isRequired={true}
             >
               <Label text={'Рейтинг на BGG'} />
             </SimpleItem>
             <SimpleItem 
               dataField={'duration'}
+              isRequired={true}
             >
               <Label text={'Длительность игры в часах'} />
             </SimpleItem>
             <SimpleItem 
               dataField={'players.min'}
+              isRequired={true}
             >
               <Label text={'Мин количество игроков'} />
             </SimpleItem>
             <SimpleItem 
               dataField={'players.max'}
+              isRequired={true}
             >
               <Label text={'Макс количество игроков'} />
             </SimpleItem>
@@ -118,7 +140,7 @@ export default () => {
               dataField={'description'} 
               colSpan={4} 
               editorType="dxTextArea"
-              editorOptions={{height: '150px'}}             
+              editorOptions={{height: '150px', placeholder: 'Текст текстович об игре'}}             
             >
               <Label text={'Описание игры'} />
             </SimpleItem>

@@ -54,5 +54,10 @@ export const navigation = [
     text: 'Game Page',
     path: '/game-page',
     icon: 'paste'
+  }, 
+  {
+    text: 'Add Game',
+    path: '/add-game',
+    icon: 'add'
   }
   ];

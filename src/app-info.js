@@ -1,5 +1,5 @@
 const appInfo = {
-    title: 'Рейтинг настолок'
+    title: 'Мои настолки'
 };
 export default appInfo;
 
