@@ -1,63 +1,51 @@
+import { GameGenre } from "./settings/game-genre";
+
 export const navigation = [
   {
-    text: 'Home',
+    text: 'Домашняя',
     path: '/home',
     icon: 'home'
   },
   {
-    text: 'Examples',
-    icon: 'folder',
-    items: [
-      {
-        text: 'Profile',
-        path: '/profile'
-      },
-      {
-        text: 'Tasks',
-        path: '/tasks'
-      }
-    ]
-  },  
-  {
-    text: 'Games',
+    text: 'Все игры',
     path: '/games',
     icon: 'fields',
     items: [
       {
-        text: 'Euro',
+        text: GameGenre.Euro,
         path: '/euro',
       }, 
       {
-        text: 'Area_control',
+        text: GameGenre.AreaConrol,
         path: '/area-control',
       }, 
       {
-        text: 'Dungeon_crawlers',
+        text: GameGenre.DungeonCrawlers,
         path: '/dungeon-crawlers',
       }, 
       {
-        text: 'Cooperatives',
+        text: GameGenre.Cooperatives,
         path: '/cooperatives',
       }, 
       {
-        text: 'Duels',
+        text: GameGenre.Duels,
         path: '/duels',
       }, 
     ]
   }, 
   {
-    text: 'Game Page',
+    text: 'Страница игры',
     path: '/game-page',
     icon: 'paste'
   }, 
   {
-    text: 'Add Game',
+    text: 'Добавить игру',
     path: '/add-game',
     icon: 'add'
   },
   {
-    text: 'User',
+    text: 'Пользователь',
     path: '/user',
     icon: 'user'
   }, 
-  ];
+];

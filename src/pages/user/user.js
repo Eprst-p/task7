@@ -11,7 +11,7 @@ export default () => {
 
   return (
     <React.Fragment>
-      <h2 className={'content-block'}>Профиль</h2>
+      <h2 className={'content-block'}>Пользователь</h2>
 
       <div className={'content-block dx-card responsive-paddings'}>
         <div className={'form-avatar'}>

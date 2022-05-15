@@ -44,7 +44,7 @@ export default () => {
 
   return (
     <React.Fragment>
-      <h2 className={'content-block'}>Game Page</h2>
+      <h2 className={'content-block'}>Страница игры</h2>
       <div className={'content-block'}>
         <div className={'dx-card responsive-paddings'}>
         <form action="#" onSubmit={handleSubmit}>

@@ -10,7 +10,7 @@ export default function UserPanel({ menuMode }) {
   const history = useHistory();
 
   function navigateToProfile() {
-    history.push("/profile");
+    history.push("/user");
   }
   const menuItems = useMemo(() => ([
     {

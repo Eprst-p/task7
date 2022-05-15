@@ -1,6 +1,4 @@
 export { default as HomePage } from './home/home';
-export { default as TasksPage } from './tasks/tasks';
-export { default as ProfilePage } from './profile/profile';
 export { default as GamesPage } from './games/games';
 export { default as EuroPage } from './euro/euro';
 export { default as AreaControlPage } from './area_control/area_control';

@@ -62,7 +62,7 @@ export default () => {
 
   return (
     <React.Fragment>
-      <h2 className={'content-block'}>Добавить игру в список</h2>
+      <h2 className={'content-block'}>Добавить игру</h2>
       <div className={'content-block'}>
         <div className={'dx-card responsive-paddings'}>
         <Popup

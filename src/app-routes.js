@@ -1,19 +1,11 @@
 import { withNavigationWatcher } from './contexts/navigation';
-import { HomePage, TasksPage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, DuelsPage, UserPage, ProfilePage, GamePagePage, AddGamePage } from './pages';
+import { HomePage, GamesPage, EuroPage, AreaControlPage, DungeonCrawlersPage, CooperativesPage, DuelsPage, UserPage, GamePagePage, AddGamePage } from './pages';
 
 const routes = [
-  {
-    path: '/tasks',
-    component: TasksPage
-  },
   {
     path: '/home',
     component: HomePage
   }, 
-  {
-    path: '/profile',
-    component: ProfilePage
-  },
   {
     path: '/games',
     component: GamesPage
